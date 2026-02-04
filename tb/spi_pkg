@@ -1,0 +1,18 @@
+package spi_pkg;
+  import uvm_pkg::*;
+  `include "uvm_macros.svh"
+  
+  // SPI Mode enumeration
+  typedef enum bit [1:0] {
+    SPI_MODE_0 = 2'b00,  // CPOL=0, CPHA=0
+    SPI_MODE_1 = 2'b01,  // CPOL=0, CPHA=1
+    SPI_MODE_2 = 2'b10,  // CPOL=1, CPHA=0
+    SPI_MODE_3 = 2'b11   // CPOL=1, CPHA=1
+  } spi_mode_e;
+  
+  typedef enum bit [1:0] {
+    DATA_8BIT  = 2'b00,
+    DATA_16BIT = 2'b01,
+    DATA_32BIT = 2'b10
+  } data_width_e;
+  
