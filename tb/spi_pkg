@@ -15,4 +15,5 @@ package spi_pkg;
     DATA_16BIT = 2'b01,
     DATA_32BIT = 2'b10
   } data_width_e;
+endpackage
   
